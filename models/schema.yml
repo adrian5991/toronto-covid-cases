@@ -1,0 +1,45 @@
+
+version: 2
+
+models:
+    - name: cases
+      description: "toronto covid cases"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+          - name: source_of_infection
+            description: "source of infection"
+
+          - name: age_group
+            description: "age group"
+          
+          - name: neighbourhood_name
+            description: "neighbourhood name"
+          
+          - name: classifcation
+            description: "classification"
+            tests:
+                - accepted_values:
+                    values: ["CONFIRMED", "PROBABLE"]
+
+          - name: gender
+            description: "gender"
+          
+          - name: episode_date
+            description: "episode date"
+          
+          - name: currently_in_icu
+            description: "currently in icu"
+    
+    - name: icu
+      description: "number of cases in icu"
+      columns:
+          - name: episode_date
+            description: "episode date"
+        
+          - name: num_in_icu
+            description: "number of cases in icu per date"
