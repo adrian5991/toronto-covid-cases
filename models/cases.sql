@@ -2,10 +2,10 @@
 
 WITH
   cases AS (
-  SELECT
+  SELECT DISTINCT
     id,
     source_of_infection,
-    COALESCE(age_group, 'N/A') AS age_group
+    COALESCE(age_group, 'N/A') AS age_group,
     COALESCE(neighbourhood_name, 'N/A') AS neighbourhood_name,
     classification,
     client_gender AS gender,
