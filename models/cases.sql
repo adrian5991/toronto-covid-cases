@@ -5,8 +5,8 @@ WITH
   SELECT
     id,
     source_of_infection,
-    age_group,
-    neighbourhood_name,
+    COALESCE(age_group, 'N/A') AS age_group
+    COALESCE(neighbourhood_name, 'N/A') AS neighbourhood_name,
     classification,
     client_gender AS gender,
     episode_date,
