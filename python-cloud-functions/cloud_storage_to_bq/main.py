@@ -1,4 +1,5 @@
 def csv_to_bigquery(event, context):
+    """Uploads a csv from bucket to bigquery"""
     from google.cloud import bigquery
 
     print('Event ID: {}'.format(context.event_id))
@@ -10,9 +11,9 @@ def csv_to_bigquery(event, context):
     print('Updated: {}'.format(event['updated']))
 
     client = bigquery.Client()
-    bucket_name = "bucket_name"
+    bucket_name = "toronto-covid-bucket"
     object_name = event['name']
-    table_id = "project_id.dataset_name.table_name"
+    table_id = "spry-district-336800.cases.staging_cases"
     uri = "gs://{}/{}".format(bucket_name, object_name)
 
     job_config = bigquery.LoadJobConfig(
@@ -27,6 +28,3 @@ def csv_to_bigquery(event, context):
 
     destination_table = client.get_table(table_id)
     print("Loaded {} rows.".format(destination_table.num_rows))
-
-
-
