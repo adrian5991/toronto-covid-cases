@@ -1,0 +1,3 @@
+Using pub/sub to trigger a cloud function: https://cloud.google.com/scheduler/docs/tut-pub-sub
+Batch loading data from cloud storage to bigquery: https://cloud.google.com/bigquery/docs/batch-loading-data
+Schedule recurring Python script: https://cloud.google.com/blog/products/application-development/how-to-schedule-a-recurring-python-script-on-gcp
