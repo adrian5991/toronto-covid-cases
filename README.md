@@ -8,7 +8,7 @@ https://datastudio.google.com/reporting/7780fef9-2ebc-41fb-a31b-1568fa4392a3
 
 ### Architecture
 
-![diagram][docs/toronto_covid-19_elt_pipeline.png]
+![diagram](docs/toronto_covid-19_elt_pipeline.png)
 
 1. Create a Cloud Function which calls the Toronto REST API and uploads the data to Google Cloud Storage. The function should be subscribed to a specific Pub/Sub topic.
 2. Create a Cloud Scheduler job which invokes a Pub/Sub trigger to send a message to the Pub/Sub topic that the aforementioned function is subscribed to.
