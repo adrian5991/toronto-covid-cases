@@ -11,9 +11,9 @@ def csv_to_bigquery(event, context):
     print('Updated: {}'.format(event['updated']))
 
     client = bigquery.Client()
-    bucket_name = "toronto-covid-bucket"
+    bucket_name = ""
     object_name = event['name']
-    table_id = "spry-district-336800.cases.staging_cases"
+    table_id = ""
     uri = "gs://{}/{}".format(bucket_name, object_name)
 
     job_config = bigquery.LoadJobConfig(
