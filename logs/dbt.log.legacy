@@ -1090,3 +1090,72 @@ There are 1 unused configuration paths:
 2022-01-02 02:42:30.390747 (Thread-208): handling status request
 2022-01-02 02:42:30.391103 (Thread-208): 02:42:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c17dd30>]}
 2022-01-02 02:42:30.391569 (Thread-208): sending response (<Response 1690 bytes [200 OK]>) to 10.0.46.244
+2022-01-02 02:42:32.069848 (Thread-209): 02:42:32  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-01-02 02:42:32.070036 (Thread-209): 02:42:32  Partial parsing enabled, no changes found, skipping parsing
+2022-01-02 02:42:32.070319 (Thread-209): 02:42:32  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.toronto_covid_cases.example
+
+2022-01-02 02:42:32.074808 (Thread-209): 02:42:32  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c1179a0>]}
+2022-01-02 02:42:32.526562 (Thread-210): handling status request
+2022-01-02 02:42:32.526917 (Thread-210): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c110d60>]}
+2022-01-02 02:42:32.527380 (Thread-210): sending response (<Response 1690 bytes [200 OK]>) to 10.0.4.10
+2022-01-02 02:42:32.607531 (Thread-211): handling status request
+2022-01-02 02:42:32.607801 (Thread-211): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c110730>]}
+2022-01-02 02:42:32.608233 (Thread-211): sending response (<Response 1668 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:42:32.613564 (Thread-212): handling list request
+2022-01-02 02:42:32.613807 (Thread-212): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c110940>]}
+2022-01-02 02:42:32.644002 (Thread-212): 02:42:32  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c225130>]}
+2022-01-02 02:42:32.644261 (Thread-212): 02:42:32  Found 2 models, 3 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-01-02 02:42:32.644582 (Thread-212): 02:42:32  The selection criterion '+README.md+' does not match any nodes
+2022-01-02 02:42:32.644702 (Thread-212): 02:42:32  No nodes selected!
+2022-01-02 02:42:32.645987 (Thread-212): sending response (<Response 1922 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:42:32.663305 (Thread-213): handling status request
+2022-01-02 02:42:32.663560 (Thread-213): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c1177f0>]}
+2022-01-02 02:42:32.663950 (Thread-213): sending response (<Response 1690 bytes [200 OK]>) to 10.0.4.10
+2022-01-02 02:42:57.776215 (Thread-214): handling status request
+2022-01-02 02:42:57.776583 (Thread-214): 02:42:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c117fa0>]}
+2022-01-02 02:42:57.800938 (Thread-214): sending response (<Response 1668 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:42:57.809981 (Thread-215): handling list request
+2022-01-02 02:42:57.810214 (Thread-215): 02:42:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c119f70>]}
+2022-01-02 02:42:57.840290 (Thread-215): 02:42:57  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c110520>]}
+2022-01-02 02:42:57.840537 (Thread-215): 02:42:57  Found 2 models, 3 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-01-02 02:42:57.840852 (Thread-215): 02:42:57  The selection criterion '+README.md+' does not match any nodes
+2022-01-02 02:42:57.840975 (Thread-215): 02:42:57  No nodes selected!
+2022-01-02 02:42:57.842354 (Thread-215): sending response (<Response 1922 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:42:59.804906 (Thread-216): 02:42:59  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-01-02 02:42:59.805089 (Thread-216): 02:42:59  Partial parsing enabled, no changes found, skipping parsing
+2022-01-02 02:42:59.805392 (Thread-216): 02:42:59  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.toronto_covid_cases.example
+
+2022-01-02 02:42:59.809953 (Thread-216): 02:42:59  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a8a00>]}
+2022-01-02 02:43:00.126365 (Thread-217): handling status request
+2022-01-02 02:43:00.126709 (Thread-217): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c3553a0>]}
+2022-01-02 02:43:00.127172 (Thread-217): sending response (<Response 1668 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:43:00.132109 (Thread-218): handling list request
+2022-01-02 02:43:00.132342 (Thread-218): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a57f0>]}
+2022-01-02 02:43:00.162410 (Thread-218): 02:43:00  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c1412e0>]}
+2022-01-02 02:43:00.162666 (Thread-218): 02:43:00  Found 2 models, 3 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-01-02 02:43:00.162986 (Thread-218): 02:43:00  The selection criterion '+README.md+' does not match any nodes
+2022-01-02 02:43:00.163106 (Thread-218): 02:43:00  No nodes selected!
+2022-01-02 02:43:00.164365 (Thread-218): sending response (<Response 1922 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:43:00.345945 (Thread-219): handling status request
+2022-01-02 02:43:00.346246 (Thread-219): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a8bb0>]}
+2022-01-02 02:43:00.346670 (Thread-219): sending response (<Response 1668 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:43:00.349830 (Thread-220): handling status request
+2022-01-02 02:43:00.350060 (Thread-220): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a8850>]}
+2022-01-02 02:43:00.350402 (Thread-220): sending response (<Response 1690 bytes [200 OK]>) to 10.0.23.130
+2022-01-02 02:43:00.351608 (Thread-221): handling list request
+2022-01-02 02:43:00.351830 (Thread-221): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a9550>]}
+2022-01-02 02:43:00.379681 (Thread-221): 02:43:00  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c18a340>]}
+2022-01-02 02:43:00.379936 (Thread-221): 02:43:00  Found 2 models, 3 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-01-02 02:43:00.380248 (Thread-221): 02:43:00  The selection criterion '+README.md+' does not match any nodes
+2022-01-02 02:43:00.380371 (Thread-221): 02:43:00  No nodes selected!
+2022-01-02 02:43:00.381672 (Thread-221): sending response (<Response 1922 bytes [200 OK]>) to 10.0.7.144
+2022-01-02 02:43:00.653149 (Thread-222): handling status request
+2022-01-02 02:43:00.653520 (Thread-222): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a8ca0>]}
+2022-01-02 02:43:00.653975 (Thread-222): sending response (<Response 1690 bytes [200 OK]>) to 10.0.38.38
+2022-01-02 02:43:06.577381 (Thread-223): handling status request
+2022-01-02 02:43:06.577741 (Thread-223): 02:43:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '89bee555-2f9e-41b5-8878-60c54ebfb5c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f884c0a8f40>]}
+2022-01-02 02:43:06.578238 (Thread-223): sending response (<Response 1690 bytes [200 OK]>) to 10.0.6.80

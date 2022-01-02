@@ -6,7 +6,7 @@ Data retrieved from: https://open.toronto.ca/dataset/covid-19-cases-in-toronto/
 
 https://datastudio.google.com/reporting/7780fef9-2ebc-41fb-a31b-1568fa4392a3
 
-### Architecture
+## Architecture
 
 ![diagram](docs/pipeline_diagram.png)
 
@@ -18,7 +18,7 @@ https://datastudio.google.com/reporting/7780fef9-2ebc-41fb-a31b-1568fa4392a3
     - the staging table is partitioned using time-unit column partioning
 4. dbt makes simple transformations to create two models in BigQuery for use in Data Studio
 
-### Improvements
+## Improvements
 - the Cloud Function to upload to Cloud Storage uploads the results from the API to `/tmp/`. Some potential ideas for a more scalable solution:
     - chunk the results into smaller files
     - creating a read stream, passing it through a stream-based process, and writing the output stream directly to Cloud Storage
