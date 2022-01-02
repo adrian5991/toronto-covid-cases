@@ -19,6 +19,7 @@ https://datastudio.google.com/reporting/7780fef9-2ebc-41fb-a31b-1568fa4392a3
 4. dbt makes simple transformations to create two models in BigQuery for use in Data Studio
 
 ### Improvements
+- for larger datasets, one could partition the table using time-unit column partitioning (i.e., based on some date value in the data) or ingestion time partitioning (i.e., based on when the data is inserted) to improve query performance
 - the Cloud Function to upload to Cloud Storage uploads the results from the API to `/tmp/`. Some potential ideas for a more scalable solution:
     - chunk the results into smaller files
     - creating a read stream, passing it through a stream-based process, and writing the output stream directly to Cloud Storage
