@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 WITH
   cases AS (
   SELECT DISTINCT
@@ -15,9 +13,8 @@ WITH
         ELSE 0
     END AS currently_in_icu
   FROM
-    cases.staging_cases )
+    cases.staging_cases 
+  WHERE EXTRACT(MONTH FROM episode_date) = EXTRACT(MONTH FROM DATE_SUB(CURRENT_DATE(), INTERVAL 1 MONTH))
+)
 
-SELECT
-  *
-FROM
-  cases
+  SELECT * FROM cases;
