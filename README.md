@@ -7,6 +7,7 @@ Data retrieved from: https://open.toronto.ca/dataset/covid-19-cases-in-toronto/
 https://datastudio.google.com/reporting/7780fef9-2ebc-41fb-a31b-1568fa4392a3
 
 ## Architecture
+Note: This project was built for learning purposes with free trial versions of most technologies used and so data may not be up to date.
 
 ![diagram](docs/pipeline_diagram.png)
 
